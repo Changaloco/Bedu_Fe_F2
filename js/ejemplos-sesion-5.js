@@ -83,26 +83,34 @@ console.log("================================");
 //!Reto2
 console.log("================================");
 console.log("Reto2");
-numbersP = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+numbersP = [1, 5, 3, 4, 5, 6, 7, 8, 9, 1];
 function createPhoneNumber(numbers) {
   bandera = false;
   telefono = "(xxx) xxx-xxxx";
   if (numbers.length == 10) {
     for (let number of numbers) {
-      if (number >= 0 && number <= 9) {
-        telefono = telefono.replace("x", number);
+      if (!isNaN(number)) {
+        if (number >= 0 && number <= 9) {
+          telefono = telefono.replace("x", number);
+        } else {
+          bandera = true;
+          break;
+        }
       } else {
         bandera = true;
         break;
       }
     }
     if (bandera == false) {
+      //errorfirst buscar la wea
       console.log(telefono);
     } else {
-      console.log("Alguno de los numeros es mayor al rango permitido");
+      console.log(
+        "Alguno de los numeros es mayor al rango permitido o es una letra xd"
+      );
     }
   } else {
-    console.log("El arreglo no debe ser de mas de 10 numeros");
+    console.log("El arreglo no debe ser de mas o menos de 10 numeros");
   }
 }
 createPhoneNumber(numbersP); //(123) 456-7890
