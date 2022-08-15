@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      #modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+    <!-- <h1 id="title">Hello World</h1>
+
+    <button id="red">Red</button>
+    <button id="blue">Blue</button>
+    <button id="black">Black</button> -->
+    <h1 id="titleText">Hello World!</h1>
+    <input type="text" id="text" />
+
+    <h2>Press Enter to turn this page blue.</h2>
+    <h2>Press Ctrl + Enter to turn this page orange.</h2>
+    <div class="reto1-div">
+      <h1 style="text-align: center">Reto 1</h1>
+      <p
+        id="ballon"
+        style="text-align: center; margin-top: 20px; font-size: 20px"
+      >
+        🎈
+      </p>
+    </div>
+    <div class="reto2-div">
+      <h1>Reto2</h1>
+      <h1>Modal</h1>
+
+      <button id="btnModal">Open modal</button>
+
+      <div id="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image" />
+      </div>
+    </div>
+    <div class="reto3-div">
+      <h1 style="text-align: center">Reto 3</h1>
+      <div id="tab-panel">
+        <div data-tabname="First">Tab one</div>
+        <div data-tabname="Second">Tab two</div>
+        <div data-tabname="Third">Tab three</div>
+      </div>
+    </div>
+    <script src="js/ejemplos-sesion-10.js"></script>
+  </body>
+</html>
