@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      #imagenes-tierra img {
+        height: 250px;
+        margin: 5px;
+      }
+      #app {
+        display: flex;
+      }
+      #app2 {
+        display: flex;
+      }
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 200px;
+        margin: auto;
+        text-align: center;
+      }
+      .card img {
+        max-width: 200px;
+      }
+      .button {
+        display: inline-block;
+        padding: 10px 0;
+        color: #fff;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+        text-decoration: none;
+      }
+      .button:hover {
+        opacity: 0.8;
+      }
+      details summary {
+        margin-bottom: 8px;
+      }
+      .button-repo {
+        display: inline-block;
+        padding: 8px 0;
+        color: #fff;
+        background-color: #242424;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+        text-decoration: none;
+      }
+      .button-repo:hover {
+        opacity: 0.8;
+      }
+    </style>
+    <div id="imagenes-tierra"></div>
+    <div class="buscador-container">
+      <h1>Buscador de Gifs Pa!!!!!</h1>
+      <div class="searchContainer">
+        <input type="text" id="search" />
+        <button id="button">Buscar</button>
+      </div>
+      <div id="results"></div>
+    </div>
+    <div class="reto1-container">
+      <h1 style="text-align: center">Reto 1: Usuarios de GitHub</h1>
+      <div id="app"></div>
+    </div>
+    <div class="reto2-container">
+      <h1 style="text-align: center">Reto 2: Repositorios de GitHub</h1>
+    </div>
+    <div class="reto3-container">
+      <h1 style="text-align: center">Reto 3: Resultados dinámicos</h1>
+      <div id="app2"></div>
+    </div>
+    <script src="js/ejemplos-sesion-12.js"></script>
+  </body>
+</html>
